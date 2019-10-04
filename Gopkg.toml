@@ -26,8 +26,12 @@
 
 
 [[constraint]]
+  name = "github.com/dgrijalva/jwt-go"
+  version = "3.2.0"
+
+[[constraint]]
   name = "github.com/labstack/echo"
-  version = "4.1.10"
+  version = "3.3.10"
 
 [prune]
   go-tests = true

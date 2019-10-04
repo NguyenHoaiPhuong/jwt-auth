@@ -10,19 +10,24 @@
   version = "v3.2.0"
 
 [[projects]]
-  digest = "1:4a3c34a22e7d33bba6ff405284e9cca1ddf6679a342e80336ff0d2c3ec87a9da"
+  digest = "1:efd601ad1d1189884f37ed075fadb5bbd17f1f5acf5862827247c6da56d125ba"
   name = "github.com/labstack/echo"
-  packages = ["."]
+  packages = [
+    ".",
+    "middleware",
+  ]
   pruneopts = "UT"
-  revision = "88a9ad73ec5303231a3b843960cefaa8fe666510"
-  version = "v4.1.10"
+  revision = "38772c686c76b501f94bd6cd5b77f5842e93b559"
+  version = "v3.3.10"
 
 [[projects]]
-  digest = "1:9bc108827ac1d8783dea294f1ef07732fa4ca7d6e20518c04888a85828eba4ce"
+  digest = "1:e8e65826d60fd82637fb9df06ecd651191b599f4a8f72b86362012f288778320"
   name = "github.com/labstack/gommon"
   packages = [
+    "bytes",
     "color",
     "log",
+    "random",
   ]
   pruneopts = "UT"
   revision = "4919956f6fb227b548f004da27c7c6b20fba499f"
@@ -118,6 +123,7 @@
   input-imports = [
     "github.com/dgrijalva/jwt-go",
     "github.com/labstack/echo",
+    "github.com/labstack/echo/middleware",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
